@@ -1,3 +1,0 @@
-name = "turso-jpedroh"
-terraform = "registry.terraform.io/jpedroh/turso"
-version = "1.2.0"

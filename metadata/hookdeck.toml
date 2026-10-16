@@ -1,3 +1,0 @@
-name = "hookdeck"
-terraform = "registry.terraform.io/hookdeck/hookdeck"
-version = "1.0.0"

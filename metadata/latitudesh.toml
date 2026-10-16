@@ -1,3 +1,0 @@
-name = "latitudesh"
-terraform = "registry.terraform.io/latitudesh/latitudesh"
-version = "1.2.0"

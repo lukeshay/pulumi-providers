@@ -1,3 +1,0 @@
-name = "momento"
-terraform = "registry.terraform.io/momentohq/momento"
-version = "0.2.2"

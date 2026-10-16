@@ -1,3 +1,0 @@
-name = "crunchybridge"
-terraform = "registry.terraform.io/CrunchyData/crunchybridge"
-version = "0.1.0"

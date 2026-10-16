@@ -5,7 +5,7 @@ const dry = process.argv.includes("--dry");
 for (const file of new Bun.Glob("*").scanSync("metadata")) {
   const provider = await import(`./metadata/${file}`);
   const version = [provider.version, provider.suffix].filter(Boolean).join("-");
-  const name = `@sst-provider/${provider.name}`;
+  const name = `@lshay-provider/${provider.name}`;
   const resp = await fetch(`https://registry.npmjs.org/${name}/${version}`);
   if (resp.status !== 404) {
     console.log("skipping", name, "version", version, "already exists");

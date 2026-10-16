@@ -1,3 +1,0 @@
-name = "fivetran"
-terraform = "registry.terraform.io/fivetran/fivetran"
-version = "1.9.26"

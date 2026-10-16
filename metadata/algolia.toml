@@ -1,3 +1,0 @@
-name = "algolia"
-terraform = "registry.terraform.io/k-yomo/algolia"
-version = "0.6.2"

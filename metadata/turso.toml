@@ -1,3 +1,0 @@
-name = "turso"
-terraform = "registry.terraform.io/celest-dev/turso"
-version = "0.2.3"

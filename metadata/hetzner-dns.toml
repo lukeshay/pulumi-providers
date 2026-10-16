@@ -1,3 +1,0 @@
-name = "hetzner-dns"
-terraform = "registry.terraform.io/opsheaven/hetzner"
-version = "0.2.0"

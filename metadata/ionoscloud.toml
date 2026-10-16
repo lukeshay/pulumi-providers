@@ -1,3 +1,0 @@
-name = "ionoscloud"
-terraform = "registry.terraform.io/ionos-cloud/ionoscloud"
-version = "6.6.1"

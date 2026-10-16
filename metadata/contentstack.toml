@@ -1,3 +1,0 @@
-name = "contentstack"
-terraform = "registry.terraform.io/labd/contentstack"
-version = "0.3.0"

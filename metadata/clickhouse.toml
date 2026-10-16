@@ -1,3 +1,0 @@
-name = "clickhouse"
-terraform = "registry.terraform.io/ClickHouse/clickhouse"
-version = "3.11.1"

@@ -1,3 +1,0 @@
-name = "materialize"
-terraform = "registry.terraform.io/MaterializeInc/materialize"
-version = "0.11.2" 

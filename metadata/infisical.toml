@@ -1,3 +1,0 @@
-name = "infisical"
-terraform = "registry.terraform.io/Infisical/infisical"
-version = "0.15.11"

@@ -1,3 +1,0 @@
-name = "cloudflare5"
-terraform = "registry.terraform.io/cloudflare/cloudflare"
-version = "5.18.0"

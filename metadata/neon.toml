@@ -1,3 +1,0 @@
-name = "neon"
-terraform = "registry.terraform.io/kislerdm/neon"
-version = "0.13.0"

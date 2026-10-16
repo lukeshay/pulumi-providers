@@ -1,3 +1,0 @@
-name = "railway"
-terraform = "registry.terraform.io/terraform-community-providers/railway"
-version = "0.6.1"

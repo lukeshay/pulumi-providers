@@ -1,3 +1,0 @@
-name = "stytch"
-terraform = "registry.terraform.io/stytchauth/stytch"
-version = "3.3.0"

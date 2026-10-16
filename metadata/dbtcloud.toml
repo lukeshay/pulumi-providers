@@ -1,3 +1,0 @@
-name = "dbtcloud"
-terraform = "registry.terraform.io/dbt-labs/dbtcloud"
-version = "1.8.2"

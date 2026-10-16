@@ -1,3 +1,0 @@
-name = "netlify"
-terraform = "registry.terraform.io/netlify/netlify"
-version = "0.1.1"

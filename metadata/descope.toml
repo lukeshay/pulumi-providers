@@ -1,3 +1,0 @@
-name = "descope"
-terraform = "registry.terraform.io/descope/descope"
-version = "0.3.4" 

@@ -1,3 +1,0 @@
-name = "incident"
-terraform = "registry.terraform.io/incident-io/incident"
-version = "5.35.0"

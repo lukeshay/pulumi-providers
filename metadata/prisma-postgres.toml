@@ -1,3 +1,0 @@
-name = "prisma-postgres"
-terraform = "registry.terraform.io/prisma/prisma-postgres"
-version = "0.2.0"

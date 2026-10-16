@@ -1,3 +1,0 @@
-name = "dominos"
-terraform = "registry.terraform.io/MNThomson/dominos"
-version = "0.2.1"
