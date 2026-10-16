@@ -43,5 +43,9 @@ for (const file of new Bun.Glob("*").scanSync("metadata")) {
   await Bun.write(tsconfig, JSON.stringify(tsjson, null, 2));
 
   await $`bun install && bun run build`;
-  if (!dry) await $`npm publish --access public`;
+  try {
+    if (!dry) await $`npm publish --access public`;
+  } catch (error) {
+    console.error("failed to publish", name);
+  }
 }

@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "@types/node": "^22.10.5"
-  }
+    "@types/node": "^22.10.5",
+    "@pulumi/stripe": "file:sdks/stripe",
+    "@pulumi/planetscale": "file:sdks/planetscale"
+  },
+  "trustedDependencies": ["@pulumi/stripe", "@pulumi/planetscale"]
 }
