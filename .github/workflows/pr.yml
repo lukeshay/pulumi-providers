@@ -25,3 +25,5 @@ jobs:
           node-version: "24"
           registry-url: "https://registry.npmjs.org"
       - run: bun run generate.ts --dry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
