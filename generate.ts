@@ -34,7 +34,7 @@ for (const file of new Bun.Glob("*").scanSync("metadata")) {
   json.files = ["bin/", "README.md", "LICENSE"];
   json.repository = {
     type: "git",
-    url: "https://github.com/anomalyco/provider",
+    url: `https://github.com/${process.env.GITHUB_REPOSITORY ?? "lukeshay/pulumi-providers"}`,
   };
   if (provider.suffix) json.version += "-" + provider.suffix;
   await Bun.write(pkg, JSON.stringify(json, null, 2));
