@@ -1,3 +1,0 @@
-name = "linear"
-terraform = "registry.terraform.io/terraform-community-providers/linear"
-version = "0.3.7"
