@@ -1,6 +1,7 @@
 import { $ } from "bun";
 
 const dry = process.argv.includes("--dry");
+const failures: string[] = [];
 
 for (const file of new Bun.Glob("*").scanSync("metadata")) {
   const provider = await import(`./metadata/${file}`);
@@ -18,7 +19,8 @@ for (const file of new Bun.Glob("*").scanSync("metadata")) {
   const sdksPath = output.match(/at (\/[^\n]+)/)?.at(1);
   const packageName = output.match(/for the (\S+) package/)?.at(1);
   if (!sdksPath || !packageName) {
-    console.log("failed to parse output");
+    console.error("failed to parse output for", name);
+    failures.push(name);
     continue;
   }
   const path = `${sdksPath}/${packageName}`;
@@ -46,6 +48,12 @@ for (const file of new Bun.Glob("*").scanSync("metadata")) {
   try {
     if (!dry) await $`npm publish --access public`;
   } catch (error) {
-    console.error("failed to publish", name);
+    console.error("failed to publish", name, error);
+    failures.push(name);
   }
+}
+
+if (failures.length) {
+  console.error("failed:", failures.join(", "));
+  process.exit(1);
 }
